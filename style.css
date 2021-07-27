@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+header.menu {
+  height: 70px;
+  background-color: gray;
+  padding: 10px 0;
+}
+.menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 50px;
+}
+.menu-icon {
+  font-size: 2em;
+  line-height: 50px;
+  cursor: pointer;
+}
+nav {
+  position: absolute;
+  background-color: white;
+  top: 70px;
+  left: 0;
+  width: 100%;
+}
+nav ul {
+  list-style-type: none;
+  max-height: 0;
+  overflow: hidden;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+}
+nav ul li {
+  padding: 0 15px;
+  border-bottom: 1px solid black;
+  margin: 0 -15px;
+}
+nav ul li a {
+  color: black;
+  display: inline-block;
+  padding: 12px;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+#checkbox {
+  display: none;
+}
+#checkbox:checked ~ nav ul {
+  max-height: 200px;
+  transition: all 0.5s;
+}
+.container{
+    margin-top: 10px;
+}
+.page-header{
+    text-align: center;
+    margin-bottom: 10px;
+}
+h3{
+    text-align: center;
+}
+.food-menu{
+    background-color: gray;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 10px 25px;
+    margin: 25px 35px;
+}
+p{
+    text-align: justify;
+}
+@media (min-width: 768px) {
+    .menu-icon{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+}
